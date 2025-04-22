@@ -1,0 +1,59 @@
+{
+  "homeheader": {
+    "speciality": "Chuyên khoa",
+    "searchdoctor": "Tìm bác sĩ theo chuyên khoa",
+    "heath-facility": "Cơ sở y tế",
+    "select-room": "Chọn bệnh viện phòng khám",
+    "doctor": "Bác sĩ",
+    "select-doctor": "Chọn bác sĩ giỏi",
+    "fee": "Gói khám",
+    "check-health": "Khám sức khỏe tổng quát",
+    "support": "Hỗ trợ",
+    "welcome":"Xin chào"
+  },
+
+   
+  
+  "menu": {
+    
+    "admin" :{
+      "manage-user":"Quản lý người dùng",
+      "manage-doctor":"Quản lý bác sĩ",
+      "manage-admin":"Quản lý admin",
+      "crud":"CRUD user",
+      "crud-redux":"CRUD redux",
+      "clinic":"Phòng khám",
+      "manage-clinic":"Quản lý phòng khám",
+      "speciality":"Chuyên khoa",
+      "manage-speciality":"Quản lý chuyên khoa",
+      "handbook":"Cẩm nang",
+      "manage-handbook":"Quản lý cẩm nang"
+
+    }
+  },
+  "manage-user": {
+    "title": "Quản lý người dùng",
+    "add": "Thêm mới người dùng",
+    "email": "Email",
+    "password": "Mật khẩu",
+    "firstName": "Tên",
+    "lastName": "Họ",
+    "name": "Họ tên",
+    "phoneNumber": "Số điện thoại",
+    "address": "Địa chỉ",
+    "role": "Vai trò",
+    "gender": "Giới tính",
+    "position": "Chức danh",
+    "image": "Ảnh",
+    "save": "Lưu người dùng",
+    "preview-image": "Tải ảnh lên",
+    "edit": "Lưu chỉnh sửa",
+    "time": "Thời gian",
+    "numeric": "STT",
+    "action": "Hành động",
+    "status": "Trạng thái"
+}
+
+  
+ 
+}

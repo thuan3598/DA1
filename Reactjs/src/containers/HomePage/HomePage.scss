@@ -1,0 +1,177 @@
+.section-share {
+  &.section-speciality {
+    background: #f5f5f5;
+  }
+  &.section-outstanding-doctor {
+    background: #f5f5f5;
+  }
+
+  &.section-about {
+    height: 500px !important;
+  }
+  .section-body {
+    .section-customize {
+      .bg-image {
+        width: 278px;
+        height: 150px;
+        background-position: center center;
+        background-size: cover;
+        background-repeat: no-repeat !important;
+        background-color: #eee;
+
+        &.section-speciality {
+          background-image: url("../../assets/speciality/co-xuong-khop.jpg");
+        }
+
+        &.section-medical-facility {
+          background-image: url("../../assets/medical-Facility/co-xuong-khop.jpg");
+        }
+        &.section-outstanding-doctor {
+          background-image: url("../../assets/OutstandingDoctor/co-xuong-khop.jpg");
+
+          width: 120px;
+          height: 120px;
+          border-radius: 50%;
+        }
+      }
+    }
+  }
+}
+
+.section-share {
+  height: 330px;
+  padding: 0 40px;
+
+  .section-container {
+    margin: 0 100px;
+    display: flex;
+    flex-direction: column;
+    .section-header {
+      height: 60px;
+      margin-bottom: 20px;
+      padding-top: 20px;
+
+      .title-section {
+        font-size: 22px;
+        font-weight: 600;
+      }
+
+      .btn-section {
+        float: right;
+        padding: 10px 15px;
+        border: none;
+        outline: none;
+        display: block;
+        background: #ebebeb;
+        color: black;
+        cursor: pointer;
+        text-transform: uppercase;
+        &:hover {
+          color: #fff;
+          background: #f7d800;
+        }
+      }
+    }
+  }
+
+  /* the slides */
+  .slick-slide {
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+
+  .img-customize {
+    padding-left: 5px;
+    padding-right: 5px;
+    border: 1px solid #eee;
+    height: 250px;
+  }
+}
+
+.slick-prev:before,
+.slick-next:before {
+  font-family: FontAweSome !important;
+  color: red;
+}
+.slick-prev {
+  position: absolute;
+  top: 110px;
+  left: -20px;
+  height: 45px !important;
+  width: 44px !important;
+  z-index: 1000 !important;
+  margin-left: 20px !important;
+  background: #fff !important;
+  opacity: 0.7;
+  &:hover {
+    opacity: 1;
+    background: #d7d7d7;
+  }
+}
+
+.slick-next {
+  position: absolute;
+  top: 110px;
+  right: -23px;
+  height: 45px !important;
+  width: 44px !important;
+  z-index: 1000;
+  margin-right: 20px !important;
+  background: #fff !important;
+  opacity: 0.7;
+  &:hover {
+    opacity: 1;
+    background: #d7d7d7;
+  }
+}
+
+.section-outstanding-doctor {
+  .outer-bg {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 10px;
+  }
+
+  .section-customize {
+    padding: 5px;
+    .customize-border {
+      padding: 20px;
+      border: 1px solid orange;
+    }
+  }
+}
+
+.home-footer {
+  text-align: center;
+  padding-top: 8px;
+  a {
+    text-decoration: unset;
+  }
+}
+
+.section-about {
+  padding: 0 100px;
+  .section-about-header {
+    padding: 20px 10px;
+    font-size: 22px;
+    font-weight: 600;
+  }
+  .section-about-content {
+    display: flex;
+    gap: 15px;
+    width: 100%;
+    .content-left {
+      width: 60%;
+    }
+    .content-right {
+      width: 40%;
+     
+      p{
+        
+        text-align: justify;
+        font-style: italic;
+        padding: 15px;
+      }
+    }
+  }
+}
