@@ -180,6 +180,7 @@ export const deleteUserFail = () => ({
 export const fetchEditUser = (data) => {
     return async (dispatch, getState) => {
         try {
+            console.log("check data edit user: ", data);
             let res = await editUserService(data);
             if (res && res.errCode === 0) {
                 toast.success("Update the user succeed!")

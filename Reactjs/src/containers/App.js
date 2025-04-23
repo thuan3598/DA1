@@ -47,7 +47,7 @@ class App extends Component {
             {/* {this.props.isLoggedIn && <Header />} */}
 
             <div className="content-container">
-              <CustomScrollbars style={{height:'100vh',width:'100%'}}>
+              <CustomScrollbars style={{ height: "100vh", width: "100%" }}>
                 <Switch>
                   <Route path={path.HOME} exact component={Home} />
                   <Route
@@ -64,16 +64,16 @@ class App extends Component {
             </div>
 
             <ToastContainer
-              className="toast-container"
-              toastClassName="toast-item"
-              bodyClassName="toast-item-body"
-              autoClose={false}
-              hideProgressBar={true}
+              position="top-right"
+              autoClose={5000}
+              hideProgressBar={false}
+              newestOnTop={false}
+              closeOnClick
+              rtl={false}
+              pauseOnFocusLoss
+              draggable
               pauseOnHover={false}
-              pauseOnFocusLoss={true}
-              closeOnClick={false}
-              draggable={false}
-              closeButton={<CustomToastCloseButton />}
+              theme="light"
             />
           </div>
         </Router>
