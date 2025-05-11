@@ -1,34 +1,36 @@
 {
   "homeheader": {
     "speciality": "Chuyên khoa",
-    "searchdoctor": "Tìm bác sĩ theo chuyên khoa",
-    "heath-facility": "Cơ sở y tế",
-    "select-room": "Chọn bệnh viện phòng khám",
-    "doctor": "Bác sĩ",
-    "select-doctor": "Chọn bác sĩ giỏi",
-    "fee": "Gói khám",
-    "check-health": "Khám sức khỏe tổng quát",
-    "support": "Hỗ trợ",
-    "welcome":"Xin chào"
+    "search-doctor": "Tìm bác sĩ theo chuyên khoa",
+    "health-facility": "Cơ sở y tế",
+    "select-room": "Chọn bệnh viện phòng khám",
+    "doctor": "Bác sĩ",
+    "select-doctor": "Chọn bác sĩ giỏi",
+    "handbook": "Cẩm nang",
+    "handbook-ques": "Cẩm nang hữu ích",
+    "support": "Hỗ trợ",
+    "welcome": "Xin chào",
+    "help": "Cần hỗ trợ, click ở đây!"
   },
 
-   
-  
   "menu": {
-    
-    "admin" :{
-      "manage-user":"Quản lý người dùng",
-      "manage-doctor":"Quản lý bác sĩ",
-      "manage-admin":"Quản lý admin",
-      "crud":"CRUD user",
-      "crud-redux":"CRUD redux",
-      "clinic":"Phòng khám",
-      "manage-clinic":"Quản lý phòng khám",
-      "speciality":"Chuyên khoa",
-      "manage-speciality":"Quản lý chuyên khoa",
-      "handbook":"Cẩm nang",
-      "manage-handbook":"Quản lý cẩm nang"
-
+    "admin": {
+      "manage-user": "Quản lý người dùng",
+      "manage-doctor": "Quản lý bác sĩ",
+      "manage-admin": "Quản lý admin",
+      "crud": "CRUD user",
+      "crud-redux": "Quản lý người dùng",
+      "clinic": "Phòng khám",
+      "manage-clinic": "Quản lý phòng khám",
+      "speciality": "Chuyên khoa",
+      "manage-speciality": "Quản lý chuyên khoa",
+      "handbook": "Cẩm nang",
+      "manage-handbook": "Quản lý cẩm nang"
+    },
+    "doctor": {
+      "manage-schedule": "Quản lý lịch khám",
+      "manage-patient": "Quản lý bệnh nhân",
+      "manage-doctor": "Quản lý lịch trình"
     }
   },
   "manage-user": {
@@ -52,8 +54,46 @@
     "numeric": "STT",
     "action": "Hành động",
     "status": "Trạng thái"
-}
+  },
+  "homepage": {
+    "outstanding-doctor": "Bác sĩ nổi bật tuần qua",
+    "more-info": "Xem thêm",
+    "specialty-popular": "Chuyên khoa phổ biến",
+    "clinic-popular": "Cơ sở y tế nổi bật",
+    "handbook": "Cẩm nang",
+    "more-handbook": "Xem thêm bài viết",
+    "all-clinic": "Danh sách cơ sở y tế dành cho bạn",
+    "all-specialty": "Danh sách các chuyên khoa phổ biến",
+    "all-doctor": "Danh sách bác sĩ nổi bật",
+    "all-handbook": "Danh sách cẩm nang hữu ích cho bạn",
+    "search-specialty": "Danh sách các chuyên khoa theo tên tìm kiếm",
+    "no-search-specialty": "Không có dữ liệu chuyên khoa!",
+    "about": "Một số bài nhạc chữa lành tâm hồn"
+  },
+  "manage-doctor": {
+    "save": "Lưu thông tin",
+    "edit": "Lưu chỉnh sửa"
+  },
+  "manage-schedule": {
+    "title": "Quản lý kế hoạch khám bệnh của bác sĩ",
+    "choose-doctor": "Chọn bác sĩ",
+    "choose-date": "Chọn ngày",
+    "save": "Lưu thông tin"
+  },
 
-  
- 
+  "admin": {
+    "manage-doctor": {
+      "title": "Thêm thông tin bác sĩ",
+      "select-doctor": "Chọn bác sĩ",
+      "intro-doctor": "Thông tin giới thiệu",
+      "price": "Giá khám bệnh",
+      "payment": "Phương thức thanh toán",
+      "province": "Tỉnh thành",
+      "nameClinic": "Tên phòng khám",
+      "addressClinic": "Địa chỉ phòng khám",
+      "note": "Ghi chú",
+      "specialty": "Chọn chuyên khoa",
+      "select-clinic": "Chọn phòng khám"
+    }
+  }
 }
