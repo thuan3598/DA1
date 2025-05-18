@@ -12,6 +12,17 @@
     "welcome": "Xin chào",
     "help": "Cần hỗ trợ, click ở đây!"
   },
+  "banner": {
+        "title1": "NỀN TẢNG Y TẾ",
+        "title2": "CHĂM SÓC SỨC KHỎE TOÀN DIỆN",
+        "child0": "Tìm chuyên khoa khám bệnh",
+        "child1": "Khám chuyên khoa",
+        "child2": "Khám từ xa",   
+        "child3": "Khám tổng quát",
+        "child4": "Xét nghiệm y học",
+        "child5": "Sức khỏe tinh thần",
+        "child6": "Khám nha khoa"
+    },
 
   "menu": {
     "admin": {
@@ -80,6 +91,36 @@
     "choose-date": "Chọn ngày",
     "save": "Lưu thông tin"
   },
+
+  "patient": {
+        "detail-doctor": {
+            "schedule": "Lịch khám",
+            "no-schedule": "Không có lịch khám trong thời gian này, vui lòng chọn thời gian khác!",
+            "choose": "Chọn",
+            "book-free": "và đặt (miễn phí)"
+        },
+        "extra-info-doctor": {
+            "text-address": "Địa chỉ khám",
+            "price": "Giá khám: ",
+            "detail": "Xem chi tiết",
+            "payment": "Người bệnh có thể thanh toán chi phí bằng hình thức: ",
+            "hide-price": "Ẩn bảng giá"
+        },
+        "booking-modal": {
+            "title": "Thông tin đặt lịch khám bệnh",
+            "fullName": "Họ và tên",
+            "phoneNumber": "Số điện thoại",
+            "email": "Địa chỉ email",
+            "address": "Địa chỉ liên lạc",
+            "reason": "Lý do khám",
+            "birthday": "Ngày sinh",
+            "gender": "Giới tính",
+            "btn-confirm": "Xác nhận",
+            "btn-cancel": "Hủy",
+            "price-booking": "Miễn phí đặt lịch",
+            "price": "Giá khám: "
+        }
+    },
 
   "admin": {
     "manage-doctor": {

@@ -13,6 +13,18 @@
     "help": "Need support, click here!"
   },
 
+  "banner": {
+        "title1": "MEDICAL FOUNDATION",
+        "title2": "COMPREHENSIVE HEALTH CARE",
+        "child0": "Find a medical specialist",
+        "child1": "Specialized examination",
+        "child2": "Remote examination",   
+        "child3": "General examination",
+        "child4": "Medical tests",
+        "child5": "Mental health",
+        "child6": "Dental examination"
+    },
+
   "menu": {
     "admin": {
       "manage-user": "Users system",
@@ -81,6 +93,36 @@
     "choose-date": "Select date",
     "save": "Save info"
   },
+
+  "patient": {
+        "detail-doctor": {
+            "schedule": "Schedule",
+            "no-schedule": "There are no appointments scheduled during this time, please choose another time!",
+            "choose": "Choose",
+            "book-free": "and book (free)"
+        },
+        "extra-info-doctor": {
+            "text-address": "Examination address",
+            "price": "Examination price: ",
+            "detail": "See details",
+            "payment": "Patients can pay the cost using the payment method: ",
+            "hide-price": "Hide price list"
+        },
+        "booking-modal": {
+            "title": "Information on scheduling medical examinations",
+            "fullName": "Full name",
+            "phoneNumber": "Phone number",
+            "email": "Email",
+            "address": "Address",
+            "reason": "Reason for medical examination",
+            "birthday": "Date of birth",
+            "gender": "Sex",
+            "btn-confirm": "Confirm",
+            "btn-cancel": "Cancel",
+            "price-booking": "Free appointment",
+            "price": "Examination price: "
+        }
+    },
 
   "admin": {
     "manage-doctor": {

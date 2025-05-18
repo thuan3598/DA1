@@ -43,7 +43,27 @@ const getDetailDoctorInfoService = (inputId) => {
 
 const saveScheduleDoctorsService = (data) => {
     return axios.post('/api/bulk-create-schedule', data)
+}
+
+const getScheduleDoctorByDateService = (doctorId, date) => {
+    return axios.get(`/api/get-schedule-doctor-by-date?doctorId=${doctorId}&date=${date}`)
+}
+
+const getExtraInfoDoctorByIdService = (inputId) => {
+    return axios.get(`/api/get-extra-info-doctor-by-id?doctorId=${inputId}`)
+}
+
+const getProfileDoctorByIdService = (doctorId) => {
+    return axios.get(`/api/get-profile-doctor-by-id?doctorId=${doctorId}`)
+}
+
+const postPatientBookingService = (data) => {
+    return axios.post('/api/patient-book-appointment', data)
 } 
+
+const postVerifyBookingService = (data) => {
+    return axios.post('/api/verify-book-appointment', data)
+}
 
 const getSpecialtyByNameService = (nameInput) => { 
   return axios.get(`/api/get-specialty-by-name?name=${nameInput}`) 
@@ -61,9 +81,7 @@ const getListPatientForDoctorService = (data) => {
     return axios.get(`/api/get-list-patient-for-doctor?doctorId=${data.doctorId}&date=${data.date}&statusId=${data.statusId}`)
 }
 
-const sendRemedyService = (data) => {
-    return axios.post('/api/send-remedy', data)
-} 
+
 
 const cancelPatientService = (data) => {
     return axios.post('/api/cancel-patient', data)
@@ -87,5 +105,11 @@ export {
   saveScheduleDoctorsService,
   cancelPatientService,
   getListPatientForDoctorService,
-  sendRemedyService,
+
+
+  getScheduleDoctorByDateService,
+  getExtraInfoDoctorByIdService,
+  getProfileDoctorByIdService,
+  postPatientBookingService,
+  postVerifyBookingService,
 };

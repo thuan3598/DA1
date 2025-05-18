@@ -2,6 +2,8 @@ import _ from "lodash";
 import db from "../models/index";
 require("dotenv").config();
 
+const MAX_NUMBER_SCHEDULE = process.env.MAX_NUMBER_SCHEDULE
+
 let getTopDoctorHomeService = (limitInput) => {
   return new Promise(async (resolve, reject) => {
     try {
@@ -270,6 +272,116 @@ let postScheduleDoctorsService = (data) => {
     })
 }
 
+let getScheduleDoctorByDateService = (doctorId, date) => {
+    return new Promise(async(resolve, reject) => {
+        try {
+            if (!doctorId || !date) {
+                resolve({
+                    errCode: 1,
+                    errMessage: 'Missing required parameters!'
+                })
+            } else {
+                let dataSchedule = await db.Schedule.findAll({
+                    where: { doctorId: doctorId, date: date },
+                    include: [
+                        { model: db.Allcode, as: 'timeTypeData', attributes: ['valueEn', 'valueVi'] },
+                        { model: db.User, as: 'doctorData', attributes: ['firstName', 'lastName'] }
+                    ],
+                    raw: false, 
+                    nest: true
+                })
+
+                if (!dataSchedule) dataSchedule = []
+                resolve({
+                    errCode: 0,
+                    data: dataSchedule
+                })
+            }
+        } catch (e) {
+            reject(e)
+        }
+    })
+}
+    
+let getExtraInfoDoctorByIdService = (inputId) => {
+    return new Promise(async(resolve, reject) => {
+        try {
+            if (!inputId) {
+                resolve({
+                    errCode: 1,
+                    errMessage: 'Missing required parameters!'
+                })
+            } else {
+                let data = await db.Doctor_Info.findOne({
+                    where: { doctorId: inputId },
+                    attributes: { exclude: ['id', 'doctorId'] },
+                    include: [
+                        { model: db.Allcode, as: 'priceTypeData', attributes: ['valueEn', 'valueVi'] },
+                        { model: db.Allcode, as: 'paymentTypeData', attributes: ['valueEn', 'valueVi'] },
+                        { model: db.Allcode, as: 'provinceTypeData', attributes: ['valueEn', 'valueVi'] },
+                    ],
+                    raw: false, 
+                    nest: true
+                })
+
+                if(!data) data = {}
+
+                resolve({
+                    errCode: 0,
+                    data: data
+                })
+            }
+        } catch (e) {
+            reject(e)
+        }
+    })
+}
+
+let getProfileDoctorByIdService = (inputId) => {
+    return new Promise(async(resolve, reject) => {
+        try {
+            if (!inputId) {
+                resolve({
+                    errCode: 1,
+                    errMessage: 'Missing required parameters!'
+                })
+            } else {
+                let data = await db.User.findOne({
+                    where: { id: inputId },
+                    attributes: { exclude: ['password'] },
+                    include: [
+                        { model: db.Markdown, attributes: ['description', 'contentHTML', 'contentMarkdown'], },
+                        { model: db.Allcode, as: 'positionData', attributes: ['valueEn', 'valueVi'] },
+                        {
+                            model: db.Doctor_Info,
+                            include: [
+                                { model: db.Allcode, as: 'priceTypeData', attributes: ['valueEn', 'valueVi'] },
+                                { model: db.Allcode, as: 'paymentTypeData', attributes: ['valueEn', 'valueVi'] },
+                                { model: db.Allcode, as: 'provinceTypeData', attributes: ['valueEn', 'valueVi'] },
+                            ]
+                        },
+                    ],
+                    raw: false,
+                    nest: true
+                })
+
+                if (data && data.image) {
+                    data.image = new Buffer(data.image, 'base64').toString('binary')
+                }
+
+                if (!data) data = {}
+
+                resolve({
+                    errCode: 0,
+                    data: data
+                })
+            }
+        } catch (e) {
+            reject(e)
+        }
+    })
+}
+
 let getListPatientForDoctorService = (doctorId, date, statusId) => {
     return new Promise(async(resolve, reject) => {
         try {
@@ -385,42 +497,7 @@ let getListPatientForDoctorService = (doctorId, date, statusId) => {
 //     })
 // }
 
-let sendRemedyService = (data) => {
-    return new Promise(async(resolve, reject) => {
-        try {
-            if (!data.email || !data.doctorId || !data.patientId || !data.timeType || !data.imageBase64) {
-                resolve({
-                    errCode: 1,
-                    errMessage: 'Missing required parameters!'
-                })
-            } else {
-                //update patient status
-                let appointment = await db.Booking.findOne({
-                    where: {
-                        doctorId: data.doctorId,
-                        patientId: data.patientId,
-                        timeType: data.timeType,
-                        statusId: 'S2'
-                    },
-                    raw: false
-                })
-                if (appointment) {
-                    appointment.statusId = 'S3'
-                    await appointment.save()
-                }
-                
-                //send email remedy
-                await emailService.sendAttachment(data)
-                resolve({
-                    errCode: 0,
-                    errMessage: 'OK'
-                })
-            }
-        } catch (e) {
-            reject(e)
-        }
-    })
-}
+
 
 let cancelPatientService = (data) => {
     return new Promise(async(resolve, reject) => {
@@ -462,6 +539,8 @@ module.exports = {
   getDetailDoctorByIdService: getDetailDoctorByIdService,
   postScheduleDoctorsService: postScheduleDoctorsService,
   getListPatientForDoctorService: getListPatientForDoctorService,
-  sendRemedyService: sendRemedyService,
   cancelPatientService: cancelPatientService,
+  getScheduleDoctorByDateService: getScheduleDoctorByDateService,
+  getExtraInfoDoctorByIdService: getExtraInfoDoctorByIdService,
+  getProfileDoctorByIdService: getProfileDoctorByIdService,
 };

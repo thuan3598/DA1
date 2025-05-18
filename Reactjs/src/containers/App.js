@@ -17,6 +17,7 @@ import Home from "../routes/Home";
 import Login from "./Auth/Login";
 import System from "../routes/System";
 import Doctor from '../routes/Doctor';
+import VerifyEmail from './Patient/VerifyEmail';
 import HomePage from "./HomePage/HomePage";
 import DetailDoctor from "./Patient/Doctor/DetailDoctor";
 
@@ -66,6 +67,7 @@ class App extends Component {
 
                   <Route path={path.HOMPAGE} component={HomePage} />
                   <Route path={path.DETAIL_DOCTOR} component={DetailDoctor} />
+                  <Route path={path.VERIFY_EMAIL_BOOKING} component={VerifyEmail} /> 
                 </Switch>
               </CustomScrollbars>
             </div>
