@@ -40,8 +40,8 @@ export const adminMenu = [
     name: "menu.admin.speciality",
     menus: [
       {
-        name: "menu.admin.manage-speciality",
-        link: "/system/manage-speciality",
+        name: "menu.admin.manage-specialty",
+        link: "/system/manage-specialty",
       },
     ],
   },

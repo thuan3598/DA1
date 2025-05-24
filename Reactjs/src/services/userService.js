@@ -65,12 +65,20 @@ const postVerifyBookingService = (data) => {
     return axios.post('/api/verify-book-appointment', data)
 }
 
+const createNewSpecialtyService = (data) => {
+    return axios.post('/api/create-new-specialty', data)
+} 
+
 const getSpecialtyByNameService = (nameInput) => { 
   return axios.get(`/api/get-specialty-by-name?name=${nameInput}`) 
 }
 
 const getAllSpecialtyService = () => {
   return axios.get(`/api/get-all-specialty`)
+}
+
+const getDetailSpecialtyByIdService = (data) => { 
+    return axios.get(`/api/get-detail-specialty-by-id?id=${data.id}&location=${data.location}`)
 }
 
 const getAllClinicService = () => {
@@ -105,11 +113,12 @@ export {
   saveScheduleDoctorsService,
   cancelPatientService,
   getListPatientForDoctorService,
-
-
   getScheduleDoctorByDateService,
   getExtraInfoDoctorByIdService,
   getProfileDoctorByIdService,
   postPatientBookingService,
   postVerifyBookingService,
+
+  createNewSpecialtyService,
+  getDetailSpecialtyByIdService,
 };
