@@ -1,0 +1,68 @@
+.doctor-search-specialty-container{
+    padding: 20px 320px;
+    border-top: 1px solid #ddd;
+
+    .body-search-specialty{
+        width: 100%;
+
+        .content-search-specialty{
+            font-size: 20px;
+            font-weight: 600;
+            padding: 10px;
+            display: flex;
+            border-bottom: 1px solid #ddd;
+            
+            .search{
+                width: fit-content;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                margin: 0 0 16px 450px;
+                padding: 8px;
+                border-radius: 32px;
+                background: #f7d800;
+
+                i{
+                    margin: 0 10px 0 5px;
+                }
+
+                input{
+                    height: 28px;
+                    width: 300px;
+                    background: transparent;
+                    border: none;
+                    outline: none;
+                }
+            }
+        }
+
+        .item-search-specialty{
+            border-bottom: 1px solid #eee;
+            display: flex;
+            padding: 10px;
+            &:hover{
+                cursor: pointer;
+            }
+
+            .left-search-specialty{
+                background-position: center center;
+                background-repeat: no-repeat;
+                background-size: contain;
+                background-color: #fff;
+                width: 150px;
+                height: 120px;
+                // border-radius: 50%;
+            }
+
+            .right-search-specialty{
+                width: calc(100% - 150px);
+                text-align: justify;
+                align-items: center;
+                margin-left: 20px;
+                padding-top: 50px;
+                color: #666;
+                font-size: 18px;
+            }
+        }
+    }
+}

@@ -1,0 +1,91 @@
+
+.manage-account-container {
+   
+    .preview-img-container {
+        position: relative;
+        display: inline-block; 
+
+        .delete-image-btn {
+            position: absolute;
+            top: 30px; 
+            right: 140px; 
+            background-color: #dc3545; 
+            color: white;
+            border-radius: 50%;
+            width: 20px;
+            height: 20px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 12px;
+            cursor: pointer;
+            z-index: 10; 
+            box-shadow: 0 2px 4px rgba(0,0,0,0.2);
+
+            &:hover {
+                background-color: #c82333;
+            }
+        }
+    }
+}
+
+
+.user-redux-container {
+    padding: 0 15px;
+
+    .title {
+        text-align: center;
+        font-size: 24px;
+        font-weight: 600;
+        text-transform: uppercase;
+        padding: 15px 0;
+    }
+
+    .user-redux-body {
+        .btn-save-user {
+            background-color: rgb(7, 148, 250);
+            border: none;
+            outline: none;
+            color: #fff;
+            padding: 8px 15px;
+            border-radius: 3px;
+            cursor: pointer;
+            &:hover {
+                opacity: 0.9;
+            }
+        }
+
+        .btn-edit-user {
+            background-color: orange;
+            border: none;
+            outline: none;
+            color: #fff;
+            padding: 8px 15px;
+            border-radius: 3px;
+            cursor: pointer;
+            &:hover {
+                opacity: 0.9;
+            }
+        }
+
+        .label-upload {
+            padding: 5px;
+            border-radius: 3px;
+            background-color: #ddd;
+            cursor: pointer;
+            &:hover {
+                opacity: 0.9;
+            }
+        }
+
+        .preview-image{
+            height: 100px;
+            width: 120px;
+            border: 1px solid grey;
+            background: center center no-repeat;
+            background-size: cover;
+            cursor: pointer;
+            margin-left: 24px;
+        }
+    }
+}

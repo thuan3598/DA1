@@ -1,0 +1,43 @@
+.doctor-all-doctor-container{
+    padding: 20px 320px;
+    border-top: 1px solid #ddd;
+
+    .body-all-doctor{
+        width: 100%;
+
+        .content-all-doctor{
+            font-size: 20px;
+            font-weight: 600;
+            padding: 10px;
+        }
+
+        .item-all-doctor{
+            border-bottom: 1px solid #eee;
+            display: flex;
+            padding: 10px;
+            &:hover{
+                cursor: pointer;
+            }
+
+            .left-all-doctor{
+                background-position: center center;
+                background-repeat: no-repeat;
+                background-size: cover;
+                background-color: #fff;
+                width: 130px;
+                height: 130px;
+                border-radius: 50%;
+            }
+
+            .right-all-doctor{
+                width: calc(100% - 130px);
+                text-align: justify;
+                align-items: center;
+                margin-left: 30px;
+                padding-top: 30px;
+                color: #666;
+                font-size: 18px;
+            }
+        }
+    }
+}

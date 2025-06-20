@@ -1,0 +1,43 @@
+.doctor-all-handbook-container{
+    padding: 20px 320px;
+    border-top: 1px solid #ddd;
+
+    .body-all-handbook{
+        width: 100%;
+
+        .content-all-handbook{
+            font-size: 20px;
+            font-weight: 600;
+            padding: 10px;
+        }
+
+        .item-all-handbook{
+            border-bottom: 1px solid #eee;
+            display: flex;
+            padding: 10px;
+            &:hover{
+                cursor: pointer;
+            }
+
+            .left-all-handbook{
+                background-position: center center;
+                background-repeat: no-repeat;
+                background-size: contain;
+                background-color: #fff;
+                width: 200px;
+                height: 120px;
+                // border-radius: 50%;
+            }
+
+            .right-all-handbook{
+                width: calc(100% - 150px);
+                text-align: justify;
+                align-items: center;
+                margin-left: 20px;
+                padding-top: 50px;
+                color: #666;
+                font-size: 18px;
+            }
+        }
+    }
+}

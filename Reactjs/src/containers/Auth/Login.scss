@@ -1,0 +1,218 @@
+/* Mobile-first: Thiết kế cho màn hình nhỏ trước */
+.login-background {
+    background: linear-gradient(90deg, rgba(63,94,251,1) 0%, rgba(252,70,156,1) 100%);
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 8px; /* Thêm padding để tránh sát mép trên mobile */
+
+    .login-container {
+        background-color: white;
+        width: 100%; /* Chiếm toàn bộ chiều rộng trên mobile */
+        max-width: 400px; /* Giảm max-width để gọn hơn */
+        min-width: 280px; /* Đảm bảo không quá nhỏ */
+        min-height: 360px; /* Giảm chiều cao tối thiểu */
+        padding: 12px;
+        border-radius: 8px;
+        box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1); /* Shadow nhẹ hơn */
+
+        .login-content {
+            padding: 8px;
+
+            .text-login {
+                font-weight: 600;
+                font-size: clamp(16px, 4.5vw, 20px); /* Giảm kích thước chữ trên mobile */
+                text-align: center;
+                margin-bottom: 12px;
+            }
+
+            .login-input {
+                margin: 12px 0 6px;
+
+                .custom-input-password {
+                    position: relative;
+
+                    input {
+                        width: 100%; /* Đảm bảo input chiếm toàn bộ chiều rộng */
+                        padding: 10px;
+                        border: 1px solid #ddd;
+                        border-radius: 4px;
+                        font-size: 14px; /* Giảm kích thước chữ input */
+                    }
+
+                    i {
+                        position: absolute;
+                        right: 8px;
+                        top: 50%;
+                        transform: translateY(-50%);
+                        cursor: pointer;
+                        font-size: 14px; /* Giảm kích thước icon */
+                        color: #666;
+                    }
+                }
+            }
+
+            .btn-login {
+                width: 100%;
+                height: 36px; /* Giảm chiều cao nút */
+                border-radius: 12px;
+                color: white;
+                outline: none;
+                border: none;
+                background: linear-gradient(140deg, #BC70A4 0%, #BFD641 100%); /* Gradient đơn giản hơn */
+                font-size: clamp(12px, 3.5vw, 14px); /* Kích thước chữ linh hoạt */
+                cursor: pointer;
+                transition: background 0.3s ease; /* Thêm transition cho nút */
+
+                &:hover {
+                    background: linear-gradient(140deg, #A06094 0%, #AFC631 100%); /* Hover effect */
+                }
+            }
+
+            .forgot-password {
+                font-size: clamp(9px, 2.8vw, 11px);
+                text-align: center;
+                display: block;
+                margin-top: 8px;
+                color: #666;
+                text-decoration: none;
+
+                &:hover {
+                    text-decoration: underline;
+                }
+            }
+
+            .social-login {
+                display: flex;
+                justify-content: center;
+                margin-top: 12px;
+                gap: 8px;
+
+                .google, .facebook {
+                    font-size: 18px; /* Giảm kích thước icon */
+                    background-color: #db4437; /* Google */
+                    border-radius: 50%;
+                    height: 32px;
+                    width: 32px;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    color: white;
+                    cursor: pointer;
+                    transition: transform 0.2s ease; /* Thêm hiệu ứng khi hover */
+
+                    &:hover {
+                        transform: scale(1.1); /* Phóng to nhẹ khi hover */
+                    }
+                }
+
+                .facebook {
+                    background-color: #1877f2; /* Facebook */
+                }
+            }
+        }
+    }
+}
+
+/* Media Queries cho màn hình lớn hơn (min-width) */
+@media (min-width: 480px) {
+    .login-background {
+        padding: 12px;
+    }
+
+    .login-container {
+        padding: 16px;
+        max-width: 420px;
+    }
+
+    .login-content {
+        padding: 12px;
+
+        .text-login {
+            font-size: clamp(18px, 4.5vw, 22px);
+            margin-bottom: 16px;
+        }
+
+        .login-input {
+            margin: 16px 0 8px;
+
+            .custom-input-password {
+                input {
+                    padding: 12px;
+                    font-size: 15px;
+                }
+
+                i {
+                    font-size: 16px;
+                }
+            }
+        }
+
+        .btn-login {
+            height: 40px;
+            font-size: clamp(13px, 3.5vw, 15px);
+        }
+
+        .forgot-password {
+            font-size: clamp(10px, 2.8vw, 12px);
+        }
+
+        .social-login {
+            gap: 10px;
+
+            .google, .facebook {
+                height: 36px;
+                width: 36px;
+                font-size: 20px;
+            }
+        }
+    }
+}
+
+@media (min-width: 768px) {
+    .login-background {
+        padding: 16px;
+    }
+
+    .login-container {
+        max-width: 450px;
+        padding: 20px;
+    }
+
+    .login-content {
+        padding: 16px;
+
+        .text-login {
+            font-size: clamp(20px, 4.5vw, 26px);
+        }
+
+        .login-input {
+            .custom-input-password {
+                input {
+                    padding: 14px;
+                    font-size: 16px;
+                }
+
+                i {
+                    font-size: 18px;
+                }
+            }
+        }
+
+        .btn-login {
+            height: 42px;
+            font-size: clamp(14px, 3.5vw, 16px);
+        }
+
+        .social-login {
+            gap: 12px;
+
+            .google, .facebook {
+                height: 40px;
+                width: 40px;
+                font-size: 24px;
+            }
+        }
+    }
+}

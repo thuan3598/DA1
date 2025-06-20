@@ -1,0 +1,120 @@
+.chat-button {
+    position: fixed;
+    bottom: 70px;
+    right: 20px;
+    width: 60px;
+    height: 60px;
+    background-color: white;
+    border-radius: 50%;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+    cursor: pointer;
+    z-index: 10000;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: transform 0.2s;
+
+    &:hover {
+        transform: scale(1.1);
+    }
+
+    .chat-icon-img {
+        width: 35px;
+        height: 35px;
+    }
+}
+
+.manage-patient-container{
+    padding: 10px;
+
+    .m-p-title{
+        text-align: center;
+        text-transform: uppercase;
+        font-weight: bold;
+        font-size: 20px;
+        margin: 15px 0;
+        color: #0071ba;
+    }
+
+    .manage-patient-body{
+        padding: 0 100px;
+
+        .select-cus{
+            select{
+                height: 40px;
+                border: blue !important;
+                outline: blue !important;
+                cursor: pointer;
+                padding: 10px 10px;
+                color: #337ab7;
+                font-weight: 700;
+                border-radius: 5px;
+                background-color: #FFF8DC;
+            }
+        }
+
+        .table-manage-patient{
+            #customers {
+                font-family: Arial, Helvetica, sans-serif;
+                border-collapse: collapse;
+                width: 100%;
+            }
+
+            #customers td, #customers th {
+                border: 1px solid #ddd;
+                padding: 8px;
+            }
+
+            #customers tr:nth-child(even){background-color: #f2f2f2;}
+
+            #customers tr:hover {background-color: #ddd;}
+
+            #customers th {
+                padding-top: 12px;
+                padding-bottom: 12px;
+                text-align: left;
+                background-color: #04AA6D;
+                color: white;
+            }
+
+            .btn-edit {
+                width: 50px;
+                border: none;
+                outline: none;
+                background: transparent;
+                color: orange;
+
+                &:hover {
+                    background-color: transparent !important;
+                    color: orange !important;
+                }
+            }
+
+            .btn-delete {
+                width: 50px;
+                border: none;
+                outline: none;
+                background: transparent;
+                color: red;
+
+                &:hover {
+                    background-color: transparent !important;
+                    color: red !important;
+                }
+            }
+
+            .row-text{
+                margin-left: 14px;
+                font-weight: 600;
+            }
+        }
+    }
+}
+
+div._loading_overlay_wrapper {
+    position: unset;
+
+    ._loading_overlay_overlay{
+        z-index: 80000000 !important;
+    }
+}

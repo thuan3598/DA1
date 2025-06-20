@@ -1,0 +1,213 @@
+.chat-button {
+    position: fixed;
+    bottom: 70px;
+    right: 20px;
+    width: 60px;
+    height: 60px;
+    background-color: white;
+    border-radius: 50%;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+    cursor: pointer;
+    z-index: 10000;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: transform 0.2s;
+
+    &:hover {
+        transform: scale(1.1);
+    }
+
+    .chat-icon-img {
+        width: 35px;
+        height: 35px;
+    }
+}
+.section-share{
+    &.section-specialty{
+        background: #faeeee;
+    }
+
+    &.section-outstanding-doctor{
+        background: #faeeee;
+    }
+
+    &.section-about{
+        height: 500px !important;
+        background: #faeeee;
+    }
+
+    .section-body{
+        .section-customize{
+            .bg-image{
+                height: 200px;
+                width: 310px;
+                background-position: center center;
+                background-repeat: no-repeat;
+                background-size: cover;
+                background-color: #eee;
+
+                &.section-specialty{
+                    // background-image: url(../../assets/specialty/co-xuong-khop.jpg);
+                }
+
+                &.section-medical-facility{
+                    // background-image: url(../../assets/medical-facility/lo-go-viet-duc.jpg);
+                    border: 1px solid #ddd;
+                    background-size: contain !important;
+                    background-color: #fff;
+                }
+
+                &.section-outstanding-doctor{
+                    // background-image: url(../../assets/doctor/anh-dai-dien-bs.jpg);
+                    width: 120px;
+                    height: 120px;
+                    border-radius: 50%;
+                }
+
+                &.section-handbook{
+                    // background-image: url(../../assets/handbook/163557-dat-lich-cham-soc-wecare247.png);
+                }
+            }
+        }        
+    }
+}
+
+.section-outstanding-doctor{
+    .outer-bg{
+        display: flex;
+        justify-content: center;
+        margin-bottom: 12px;
+    }
+
+    .section-customize{
+        padding: 0 12px 0 3px;
+        cursor: pointer;
+
+        .customize-border{
+            border: 1px solid orange;
+            padding: 20px;
+        }
+    }
+}
+
+.section-about{
+    padding: 0 310px;
+
+    .section-about-header{
+        padding: 20px 10px;
+        font-size: 24px;
+        font-weight: 600;
+    }
+
+    .section-about-content{
+        display: flex;
+        gap: 24px;
+        width: 100%;
+
+        .content-left{
+            width: 60%;
+        }
+
+        .content-right{
+            width: 40%;
+
+            p{
+                text-align: justify;
+                font-size: 16px;
+                font-style: italic;
+                padding: 16px;
+            }
+        }
+    }
+}
+
+.home-footer{
+    text-align: center;
+    padding-top: 34px;
+    padding-bottom: 16px;
+    
+    a{
+        text-decoration: unset;
+
+        &:hover{
+            cursor: pointer;
+        }
+    }
+
+}
+
+.section-share{
+    height: 400px;
+    
+    .section-container{
+        margin: 0 310px;
+        display: flex;
+        flex-direction: column;
+
+        .section-header{
+            height: 60px;
+            margin-bottom: 50px;
+            padding-top: 40px;
+
+            .title-section{
+                font-size: 26px;
+                font-weight: 600;
+            }
+
+            .btn-section{
+                float: right;
+                padding: 12px 24px;
+                border: none;
+                outline: none;
+                background: #ebebeb;
+                color: black;
+                text-transform: uppercase;
+                margin-right: 12px;
+
+                &:hover{
+                    background: #f7d800;
+                    color: white;
+                    cursor: pointer;
+                }
+            }
+        }
+    }
+}
+
+            //custom slick slider css
+            .slick-prev{
+                left: -12px !important;
+                z-index: 1000 !important;
+                height: 48px !important;
+                width: 44px !important;
+                background: #fff !important;
+
+                &:hover{
+                    background: #f7eeee !important;
+                }
+            }
+
+            .slick-prev:before, .slick-next:before{
+                font-family: FontAwesome !important;
+                color: red !important;
+            }
+
+            .slick-next{
+                right: -12px !important;
+                z-index: 1000 !important;
+                height: 48px !important;
+                width: 44px !important;
+                background: #fff !important;
+
+                &:hover{
+                    background: #f7eeee !important;
+                }
+            }
+
+            .slick-disabled{
+                display: none !important;
+            }
+
+
+

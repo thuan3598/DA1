@@ -1,0 +1,123 @@
+.manage-booking-container {
+    padding: 15px;
+
+    .m-b-title {
+        text-align: center;
+        font-size: 24px;
+        font-weight: 600;
+        text-transform: uppercase;
+        padding: 15px 0;
+        color: #337ab7; // A common blue for titles
+    }
+
+    .manage-booking-body {
+        margin-top: 20px;
+        overflow-x: auto; // Allow horizontal scrolling on small screens if table is wide
+
+        .table-patient-booking {
+            width: 100%;
+
+            table {
+                width: 100%;
+                border-collapse: collapse;
+                border: 1px solid #ddd; // Add border to the table
+
+                th, td {
+                    border: 1px solid #ddd;
+                    padding: 8px;
+                    text-align: left;
+                }
+
+                th {
+                    background-color: #f2f2f2;
+                    font-weight: 600;
+                    color: #333;
+                }
+
+                tr:nth-child(even) {
+                    background-color: #f9f9f9;
+                }
+
+                tr:hover {
+                    background-color: #f1f1f1;
+                }
+
+                .btn-cancel-booking {
+                    background-color: #dc3545; // Red for cancel
+                    color: white;
+                    border: none;
+                    padding: 8px 12px;
+                    border-radius: 4px;
+                    cursor: pointer;
+                    transition: background-color 0.3s ease;
+
+                    &:hover {
+                        background-color: #c82333;
+                    }
+                    &:disabled {
+                        opacity: 0.6;
+                        cursor: not-allowed;
+                    }
+                }
+            }
+        }
+    }
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .manage-booking-container {
+        padding: 10px;
+    }
+
+    .m-b-title {
+        font-size: 20px;
+    }
+
+    .manage-booking-body {
+        .table-patient-booking {
+            table, thead, tbody, th, td, tr {
+                display: block; // Stack table elements
+            }
+            thead tr {
+                position: absolute;
+                top: -9999px; // Hide header but keep it accessible
+                left: -9999px;
+            }
+            tr {
+                border: 1px solid #ccc;
+                margin-bottom: 10px;
+                border-radius: 8px;
+                overflow: hidden; // For rounded corners
+            }
+            td {
+                border: none;
+                border-bottom: 1px solid #eee;
+                position: relative;
+                padding-left: 50%;
+                text-align: right;
+
+                &::before {
+                    content: attr(data-label); // Display data labels
+                    position: absolute;
+                    left: 6px;
+                    width: 45%;
+                    padding-right: 10px;
+                    white-space: nowrap;
+                    text-align: left;
+                    font-weight: bold;
+                    color: #555;
+                }
+            }
+        }
+    }
+}
+
+/* Styles for react-loading-overlay */
+div._loading_overlay_wrapper {
+    position: unset; // Override default position to allow normal layout
+
+    ._loading_overlay_overlay{
+        z-index: 9999 !important; // Ensure loading overlay is on top
+    }
+}

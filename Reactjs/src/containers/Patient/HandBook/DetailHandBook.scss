@@ -1,0 +1,32 @@
+.detail-handbook-container{
+    background-color: #eee;
+    
+    .desc-handbook{
+        background-color: #eee;
+        padding: 10px 350px;
+        border-top: 1px solid #ddd;
+
+        .content-handbook{
+            .content-head{
+                .name-head{
+                    padding: 30px;
+                    font-size: 20px !important;
+                    font-weight: 600 !important;
+                    text-align: center;
+                    align-items: center;
+                    text-transform: uppercase;
+                }
+            }
+        }
+
+        h1,h3 {
+            font-size: 16px !important;
+            font-weight: 600 !important;
+        }
+
+        h2{
+            font-size: 16px !important;
+            font-weight: 500 !important;
+        }
+    }
+}

@@ -1,0 +1,177 @@
+{
+    "homeheader": {
+        "speciality": "Chuyên khoa",
+        "search-doctor": "Tìm bác sĩ theo chuyên khoa",
+        "health-facility": "Cơ sở y tế",
+        "select-room": "Chọn bệnh viện phòng khám",
+        "doctor": "Bác sĩ",
+        "select-doctor": "Chọn bác sĩ giỏi",
+        "handbook": "Cẩm nang",
+        "handbook-ques": "Cẩm nang hữu ích",
+        "support": "Hỗ trợ",
+        "welcome": "Xin chào",
+        "help": "Cần hỗ trợ, click ở đây!",
+        "login": "Đăng nhập"
+    },
+
+    "banner": {
+        "title1": "NỀN TẢNG Y TẾ",
+        "title2": "CHĂM SÓC SỨC KHỎE TOÀN DIỆN",
+        "child0": "Tìm chuyên khoa khám bệnh",
+        "child1": "Khám chuyên khoa",
+        "child2": "Khám từ xa",   
+        "child3": "Khám tổng quát",
+        "child4": "Xét nghiệm y học",
+        "child5": "Sức khỏe tinh thần",
+        "child6": "Khám nha khoa"
+    },
+
+    "menu": {
+        "admin": {
+            "manage-user": "Người dùng hệ thống",
+            "manage-doctor": "Quản lý bác sĩ",
+            "manage-admin": "Quản lý admin",
+            "crud": "CRUD user",
+            "crud-redux": "Quản lý người dùng",
+            "manage-clinic": "Quản lý phòng khám",
+            "clinic": "Phòng khám",
+            "manage-specialty": "Quản lý chuyên khoa",
+            "specialty": "Chuyên khoa",
+            "manage-handbook": "Quản lý cẩm nang",
+            "handbook": "Cẩm nang"
+        },
+        "doctor": {
+            "manage-schedule": "Quản lý kế hoạch khám bệnh",
+            "manage-patient": "Quản lý bệnh nhân khám bệnh",
+            "manage-doctor": "Quản lý lịch trình"
+        }
+    },
+    
+    "manage-user": {
+        "title": "Quản lý người dùng",
+        "add": "Thêm mới người dùng",
+        "email": "Email",
+        "password": "Mật khẩu",
+        "firstName": "Tên",
+        "lastName": "Họ",
+        "name": "Họ tên",
+        "phoneNumber": "Số điện thoại",
+        "address": "Địa chỉ",
+        "role": "Vai trò",
+        "gender": "Giới tính",
+        "position": "Chức danh",
+        "image": "Ảnh",
+        "save": "Lưu người dùng",
+        "preview-image": "Tải ảnh lên",
+        "edit": "Lưu chỉnh sửa",
+        "time": "Thời gian",
+        "numeric": "STT",
+        "action": "Hành động",
+        "status": "Trạng thái"
+    },
+
+    "homepage": {
+        "outstanding-doctor": "Bác sĩ nổi bật tuần qua",
+        "more-info": "Xem thêm",
+        "specialty-popular": "Chuyên khoa phổ biến",
+        "clinic-popular": "Cơ sở y tế nổi bật",
+        "handbook": "Cẩm nang",
+        "more-handbook": "Xem thêm bài viết",
+        "all-clinic": "Danh sách cơ sở y tế dành cho bạn",
+        "all-specialty": "Danh sách các chuyên khoa phổ biến",
+        "all-doctor": "Danh sách bác sĩ nổi bật",
+        "all-handbook": "Danh sách cẩm nang hữu ích cho bạn",
+        "search-specialty": "Danh sách các chuyên khoa theo tên tìm kiếm",
+        "no-search-specialty": "Không có dữ liệu chuyên khoa!",
+        "about": "Một số bài nhạc chữa lành tâm hồn"
+    },
+
+    "manage-doctor": {
+        "save": "Lưu thông tin",
+        "edit": "Lưu chỉnh sửa"
+    },
+
+    "manage-schedule": {
+        "title": "Quản lý kế hoạch khám bệnh của bác sĩ",
+        "choose-doctor": "Chọn bác sĩ",
+        "choose-date": "Chọn ngày",
+        "save": "Lưu thông tin"
+    },
+
+    "patient": {
+        "detail-doctor": {
+            "schedule": "Lịch khám",
+            "no-schedule": "Không có lịch khám trong thời gian này, vui lòng chọn thời gian khác!",
+            "choose": "Chọn",
+            "book-free": "và đặt (miễn phí)"
+        },
+        "extra-info-doctor": {
+            "text-address": "Địa chỉ khám",
+            "price": "Giá khám: ",
+            "detail": "Xem chi tiết",
+            "payment": "Người bệnh có thể thanh toán chi phí bằng hình thức: ",
+            "hide-price": "Ẩn bảng giá"
+        },
+        "booking-modal": {
+            "title": "Thông tin đặt lịch khám bệnh",
+            "fullName": "Họ và tên",
+            "phoneNumber": "Số điện thoại",
+            "email": "Địa chỉ email",
+            "address": "Địa chỉ liên lạc",
+            "reason": "Lý do khám",
+            "birthday": "Ngày sinh",
+            "gender": "Giới tính",
+            "btn-confirm": "Xác nhận",
+            "btn-cancel": "Hủy",
+            "price-booking": "Miễn phí đặt lịch",
+            "price": "Giá khám: "
+        }
+    },
+
+    "admin": {
+        "manage-doctor": {
+            "title": "Thêm thông tin bác sĩ",
+            "select-doctor": "Chọn bác sĩ",
+            "intro-doctor": "Thông tin giới thiệu",
+            "price": "Giá khám bệnh",
+            "payment": "Phương thức thanh toán",
+            "province": "Tỉnh thành",
+            "nameClinic": "Tên phòng khám",
+            "addressClinic": "Địa chỉ phòng khám",
+            "note": "Ghi chú",
+            "specialty": "Chọn chuyên khoa",
+            "select-clinic": "Chọn phòng khám"
+        },
+        "manage-specialty": {
+            "title": "Quản lý chuyên khoa",
+            "name-specialty": "Tên chuyên khoa",
+            "img-specialty": "Ảnh chuyên khoa",
+            "save": "Lưu"
+        },
+        "manage-clinic": {
+            "title": "Quản lý phòng khám",
+            "name-clinic": "Tên phòng khám",
+            "img-clinic": "Ảnh phòng khám",
+            "save": "Lưu"
+        },
+        "manage-patient": {
+            "title": "Quản lý bệnh nhân khám bệnh",
+            "chose-date": "Chọn ngày khám",
+            "chose-status": "Chọn trạng thái",
+            "confirm": "Xác nhận",
+            "send-invoice": "Gửi hóa đơn khám bệnh",
+            "email-patient": "Email bệnh nhân",
+            "choose-invoice": "Chọn file hóa đơn",
+            "send": "Gửi",
+            "cancel": "Hủy",
+            "check-cancel": "Lịch hẹn đã hủy",
+            "done": "Đã gửi phiếu khám"
+        },
+        "manage-handbook": {
+            "title": "Quản lý cẩm nang",
+            "name-handbook": "Tên cẩm nang",
+            "img-handbook": "Ảnh cẩm nang",
+            "save": "Lưu"
+        }
+    }
+}

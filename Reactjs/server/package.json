@@ -1,0 +1,12 @@
+{
+  "name": "davux",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "start": "node index.js"
+  },
+  "dependencies": {
+    "davux": "file:",
+    "express": "^4.16.4"
+  }
+}

@@ -1,0 +1,133 @@
+.doctor-schedule-container{
+    height: 100%;
+
+    .all-schedule-with-chat {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+
+    .select-container {
+        flex-grow: 1;
+        max-width: 125px;
+
+        select {
+            border-bottom: 1px solid #ddd;
+            border-top: none;
+            border-right: none;
+            border-left: none;
+            outline: none;
+            cursor: pointer;
+            padding: 10px 0;
+            color: #337ab7;
+            font-weight: 700;
+        }
+    }
+
+    .chat-icon {
+         position: relative;
+    display: inline-block;
+    cursor: pointer;
+
+    img {
+        width: 28px;
+        height: 28px;
+        transition: transform 0.2s;
+
+        &:hover {
+            transform: scale(1.1);
+        }
+    }
+
+    .chat-tooltip {
+        visibility: hidden;
+        background-color: #555;
+        color: #fff;
+        text-align: center;
+        padding: 5px 8px;
+        border-radius: 4px;
+        position: absolute;
+        z-index: 1;
+        bottom: 125%; /* Hiển thị phía trên icon */
+        left: 50%;
+        transform: translateX(-50%);
+        opacity: 0;
+        transition: opacity 0.3s;
+         white-space: nowrap;       
+    min-width: 100px;          
+    max-width: 200px;
+
+        /* Mũi tên nhỏ bên dưới */
+        &::after {
+            content: "";
+            position: absolute;
+            top: 100%; /* phía dưới tooltip */
+            left: 50%;
+            margin-left: -5px;
+            border-width: 5px;
+            border-style: solid;
+            border-color: #555 transparent transparent transparent;
+        }
+    }
+
+    &:hover .chat-tooltip {
+        visibility: visible;
+        opacity: 1;
+    }
+    }
+}
+
+
+    .all-available-time{
+        .text-calendar{
+            color: #333;
+            margin: 10px 0;
+
+            span{
+                text-transform: uppercase;
+                margin-left: 5px;
+            }
+        }
+
+        .time-content{
+            
+            .time-content-btns{
+                display: flex;
+                gap: 15px;
+                flex-wrap: wrap;
+
+                button{
+                    padding: 10px 16px;
+                    border: none;
+                    outline: none;
+                    background-color: #fff04b;
+                    min-width: 140px;
+                    border-radius: 3px;
+                    font-weight: 600;
+                    color: #333;
+
+                    &:hover{
+                        background-color: #45c3d2;
+                        color: white;
+                    }
+                }
+
+                .btn-vi{
+                    min-width: 150px;
+                }
+
+                .btn-en{
+                    min-width: 165px;
+                }
+
+                .no-schedule{
+                    font-style: italic;
+                    font-size: 15px;
+                }
+            }
+
+            .book-free{
+                margin-top: 16px;
+            }
+        }
+    }
+}

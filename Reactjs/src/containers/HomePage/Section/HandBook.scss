@@ -1,0 +1,15 @@
+.handbook-child{
+    cursor: pointer;
+
+    .handbook-name{
+        padding: 8px 0;
+
+        &:hover{
+            color: #007bff;
+        }
+    }
+
+    .section-handbook{
+        border: 1px solid #eee;
+    }
+}

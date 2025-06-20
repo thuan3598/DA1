@@ -1,0 +1,177 @@
+{
+    "homeheader":{
+        "speciality": "Medical specialist",
+        "search-doctor": "Find a doctor by specialty",
+        "health-facility": "Health facilities",
+        "select-room": "Choose a hospital clinic",
+        "doctor": "Doctor",
+        "select-doctor": "Choose a good doctor",
+        "handbook": "Handbook",
+        "handbook-ques": "Useful handbook",
+        "support": "Support",
+        "welcome": "Welcome",
+        "help": "Need support, click here!",
+        "login": "Login"
+    },
+
+    "banner": {
+        "title1": "MEDICAL FOUNDATION",
+        "title2": "COMPREHENSIVE HEALTH CARE",
+        "child0": "Find a medical specialist",
+        "child1": "Specialized examination",
+        "child2": "Remote examination",   
+        "child3": "General examination",
+        "child4": "Medical tests",
+        "child5": "Mental health",
+        "child6": "Dental examination"
+    },
+    
+    "menu": {
+        "admin": {
+            "manage-user": "User System",
+            "manage-doctor": "Manage doctor",
+            "manage-admin": "Manage admin",
+            "crud": "CRUD user",
+            "crud-redux": "Manage user",
+            "manage-clinic": "Manage clinic",
+            "clinic": "Clinic",
+            "manage-specialty": "Manage specialty",
+            "specialty": "Specialty",
+            "manage-handbook": "Manage handbook",
+            "handbook": "Handbook"
+        },
+        "doctor": {
+            "manage-schedule": "Manage doctor's schedule",
+            "manage-patient": "Manage examination patients",
+            "manage-doctor": "Schedule management"
+        }
+    },
+
+    "manage-user": {
+        "title": "Manage users",
+        "add": "Add a new user",
+        "email": "Email",
+        "password": "Password",
+        "firstName": "First name",
+        "lastName": "Last name",
+        "name": "Full Name",
+        "phoneNumber": "Phone number",
+        "address": "Address",
+        "role": "Role",
+        "gender": "Gender",
+        "position": "Position",
+        "image": "Avatar",
+        "save": "Save user",
+        "preview-image": "Upload image",
+        "edit": "Save changes",
+        "time": "Time",
+        "numeric": "Num",
+        "action": "Action",
+        "status": "Status"
+    },
+
+    "homepage": {
+        "outstanding-doctor": "Outstanding doctors last week",
+        "more-info": "More info",
+        "specialty-popular": "Popular specialties",
+        "clinic-popular": "Popular medical facilities",
+        "handbook": "Handbook",
+        "more-handbook": "See more articles",
+        "all-clinic": "List of medical facilities for you",
+        "all-specialty": "List of popular specialties",
+        "all-doctor": "List of prominent doctors",
+        "all-handbook": "List of useful handbooks for you",
+        "search-specialty": "List of specialties by search name",
+        "no-search-specialty": "There is no data specialty!",
+        "about": "Some music heals the soul"
+    },
+
+    "manage-doctor": {
+        "save": "Save info",
+        "edit": "Save changes"
+    },
+
+    "manage-schedule": {
+        "title": "Manage doctor's medical examination plans",
+        "choose-doctor": "Select doctor",
+        "choose-date": "Select date",
+        "save": "Save info"
+    },
+
+    "patient": {
+        "detail-doctor": {
+            "schedule": "Schedule",
+            "no-schedule": "There are no appointments scheduled during this time, please choose another time!",
+            "choose": "Choose",
+            "book-free": "and book (free)"
+        },
+        "extra-info-doctor": {
+            "text-address": "Examination address",
+            "price": "Examination price: ",
+            "detail": "See details",
+            "payment": "Patients can pay the cost using the payment method: ",
+            "hide-price": "Hide price list"
+        },
+        "booking-modal": {
+            "title": "Information on scheduling medical examinations",
+            "fullName": "Full name",
+            "phoneNumber": "Phone number",
+            "email": "Email",
+            "address": "Address",
+            "reason": "Reason for medical examination",
+            "birthday": "Date of birth",
+            "gender": "Sex",
+            "btn-confirm": "Confirm",
+            "btn-cancel": "Cancel",
+            "price-booking": "Free appointment",
+            "price": "Examination price: "
+        }
+    },
+
+    "admin": {
+        "manage-doctor": {
+            "title": "Create more doctor information",
+            "select-doctor": "Choose a doctor",
+            "intro-doctor": "Introductory information",
+            "price": "Price of medical examination",
+            "payment": "Payment method",
+            "province": "Province",
+            "nameClinic": "Clinic name",
+            "addressClinic": "Clinic address",
+            "note": "Note",
+            "specialty": "Choose a specialty",
+            "select-clinic": "Choose a clinic"
+        },
+        "manage-specialty": {
+            "title": "Specialty management",
+            "name-specialty": "Name of specialty",
+            "img-specialty": "Image of specialty",
+            "save": "Save"
+        },
+        "manage-clinic": {
+            "title": "Clinic management",
+            "name-clinic": "Name of clinic",
+            "img-clinic": "Image of clinic",
+            "save": "Save"
+        },
+        "manage-patient": {
+            "title": "Manage medical examination patients",
+            "chose-date": "Choose an examination date",
+            "chose-status": "Choose status",
+            "confirm": "Confirm",
+            "send-invoice": "Send medical bill",
+            "email-patient": "Patient email",
+            "choose-invoice": "Select the invoice file",
+            "send": "Send",
+            "cancel": "Cancel",
+            "check-cancel": "Appointment has been cancelled",
+            "done": "Medical examination form sent"
+        },
+        "manage-handbook": {
+            "title": "Handbook management",
+            "name-handbook": "Name of handbook",
+            "img-handbook": "Image of handbook",
+            "save": "Save"
+        }
+    }
+}

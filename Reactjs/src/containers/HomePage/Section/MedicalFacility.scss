@@ -1,0 +1,11 @@
+.section-customize{
+    cursor: pointer;
+
+    .name-medical{
+        padding: 8px 0;
+
+        &:hover{
+            color: #007bff;
+        }
+    }
+}
